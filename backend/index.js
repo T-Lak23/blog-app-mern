@@ -1,6 +1,7 @@
 //EXPRESS
 import express from "express";
 const app = express();
+app.set("trust proxy", 1);
 
 import "dotenv/config"; //DOTENV
 import cookieParser from "cookie-parser"; //Cookie Parse
